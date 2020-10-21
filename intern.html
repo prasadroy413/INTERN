@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    h1, h2, h3 {
+  font-weight: bolder;
+
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+/* nav bar */
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Ubuntu";
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+/* title section */
+#title {
+  background-color: dimgrey;
+  color: #696969;
+}
+
+
+.big-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+
+}
+
+.title-image {
+  position: absolute;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+.title-image {
+  width: 100%;
+}
+
+/* features */
+#features {
+  padding: 7% 15%;
+  background-color: dimgrey;
+  z-index: 1;
+  position: relative;
+}
+
+.feature-title{
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 5%;
+}
+
+.icon {
+  color: grey;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: darkgrey;
+}
+
+p {
+  color: #A9A9A9;
+}
+
+/* testimonials */
+#testimonials {
+  background-color: #add8e6;
+  text-align: center;
+  color: #add8e6;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* call to action*/
+#cta {
+  background-color: red;
+  color: #FF0000;
+  text-align: center;
+  padding: 7% 15% 7%;
+}
+
+/* footer */
+#footer {
+  text-align: center;
+  padding: 7% 15%;
+  background-color: #FF0000;
+}
+
+.social-logo {
+  margin: 20px 10px;
+}
+
+/* responsive */
+@media (max-width:990px) {
+  .title-image {
+    position: static;
+  }
+
+  .title {
+    text-align: center;
+  }
+}
+</style>
+  <meta charset="utf-8">
+  <title>A small donation can make a big difference</title>
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!--internal CSS-->
+  <link rel="stylesheet" href="style.css">
+
+  <!--font awesome-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+
+</head>
+
+<body>
+
+
+  <section class="coloured-section" id="title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">child Education</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav  ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#title">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Mission</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="big-heading">A small donation can make a big difference</h1>
+          <div class="razorpay-embed-btn" data-url="https://rzp.io/l/xw2OZbaqMl" data-text="Donate For Cause" data-color="#1E90FF" data-size="large">
+            <script>
+              (function() {
+                var d = document;
+                var x = !d.getElementById('razorpay-embed-btn-js')
+                if (x) {
+                  var s = d.createElement('script');
+                  s.defer = !0;
+                  s.id = 'razorpay-embed-btn-js';
+                  s.src = 'https://cdn.razorpay.com/static/embed_btn/bundle.js';
+                  d.body.appendChild(s);
+                } else {
+                  var rzp = window['_rzp_'];
+                  rzp && rzp.init && rzp.init()
+                }
+              })();
+            </script>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6">
+          <img class="title-image" src="data:image/jpeg;base64,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" alt="child-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-check-circle fa-4x"></i>
+          <h3 class="feature-title"> Education.</h3>
+          <p>We work to ensure children are educated for life through collective efforts.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class=" icon fas fa-bullseye fa-4x"></i>
+          <h3 class="feature-title"> Nutrition</h3>
+          <p>We work to address the causes of malnutrition with special focus on children below 5 years</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-heart fa-4x"></i>
+          <h3 class="feature-title"> Livelihood.</h3>
+          <p>Our livelihood interventions enable families to enhance income and provide better for their children.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+
+      <i class="fab fa-facebook-f social-logo"></i>
+      <i class="fab fa-twitter social-logo"></i>
+      <i class="fab fa-instagram social-logo"></i>
+      <i class="fas fa-envelope social-logo"></i>
+      <p>© Copyright 2020 Child Education</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
